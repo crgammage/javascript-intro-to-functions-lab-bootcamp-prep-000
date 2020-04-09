@@ -14,13 +14,13 @@ var cant = "I can't hear you!"
 var yes = "YES INDEED!"
 var love = "I love you, too."
 function sayHiToGrandma(string) {
-  if (string.toLowerCase()) {
+  if (string.toLowerCase() === string) {
     return cant;
   }
-  if (string.toUpperCase()) {
+  if (string.toUpperCase() === string) {
     return yes;
   }
-  if ("I love you, Grandma.")
+  if (string === "I love you, Grandma.")
   return love;
 }
 sayHiToGrandma(string.toLowerCase())
